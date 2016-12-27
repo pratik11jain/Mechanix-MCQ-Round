@@ -9,29 +9,28 @@ package questions;
 import java.io.Serializable;
 
 /**
- *
- * @author itsankit
- * serialVersionUID = 2690445955010816060
+ * @author Praik
+ *         serialVersionUID = 2690445955010816060
  */
-public class Question implements Serializable{
-    
+public class Question implements Serializable {
+
     public int quesNo;
     public String ques;
     public String opt[] = new String[4];
     public int ans;
     public int type;
-    //public int imgFlag=0;
+
     @Override
     public String toString() {
         String temp = "";
-        temp = "Ques ID : "+quesNo;
-        temp += "\nDifficulty: "+type;
-        temp += "\nQues:\n"+ques;
-        temp += "\n(1)"+opt[0];
-        temp += "\n(2)"+opt[1];
-        temp += "\n(3)"+opt[2];
-        temp += "\n(4)"+opt[3];
-        temp += "\nCorrect option: "+ans;
+        temp = "Ques ID : " + quesNo;
+        temp += "\nDifficulty: " + type;
+        temp += "\nQues:\n" + ques;
+        temp += "\n(1)" + opt[0];
+        temp += "\n(2)" + opt[1];
+        temp += "\n(3)" + opt[2];
+        temp += "\n(4)" + opt[3];
+        temp += "\nCorrect option: " + ans;
         return temp;
     }
 }

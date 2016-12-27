@@ -8,15 +8,14 @@ package questions;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import javax.swing.JFrame;
 
 /**
- *
- * @author Swapnil
+ * @author Pratik
  */
 public class ProjectMain {
-    
-public static Login fr;
+
+    public static Login fr;
+
     /**
      * @param args the command line arguments
      * @throws java.io.IOException
@@ -27,13 +26,7 @@ public static Login fr;
         fr = new Login();
         fr.dispose();
         fr.setUndecorated(true);
-       // fr.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         fr.setSize(1366, 768);
         fr.setVisible(true);
-       
-       
-       
-        
-       
     }
 }
